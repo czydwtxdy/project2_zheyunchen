@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <title>the Mushroom Foundation </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Press+Start+2P" media="all">
+    <link rel="stylesheet" type="text/css" href="css\main.css" media="all">
+
+    <script
+        src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202401290101/show_ads_impl_fy2021.js?bust=31080817"></script>
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1162486-13']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <style type="text/css">
+        .full-width {
+            width: 100%;
+            float: left;
+            background: white !important;
+        }
+
+        .header {
+            width: 100%;
+            height: 90px;
+            /* background: linear-gradient(90deg, #00FF38 1.42%, rgba(0, 255, 56, 0.00) 80.35%); */
+            color: #FFF;
+            font-family: url(font\Honk-Regular.ttf);
+            font-weight: bold;
+            font-size: 80px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .full-width-above-canvas {
+            width: 100%;
+            float: left;
+            position: absolute;
+            top: 0;
+            z-index: 999999999;
+        }
+
+        .full-width-top {
+            width: 100%;
+            background: white !important;
+            position: absolute;
+            z-index: 9999999999;
+        }
+
+        .full-canvas {
+            width: 100%;
+            float: left;
+        }
+
+        .full-canvas h1,
+        .full-canvas h2 {
+            padding-top: 70px;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+            text-align: center;
+            /* padding-top: 10px;
+            padding-bottom: 10px; */
+            position: relative;
+        }
+
+        .leaderboard {
+            height: 90px;
+        }
+
+        .container-half {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer {
+            color: #FFF;
+            background: linear-gradient(90deg, #00FF38 1.42%, rgba(0, 255, 56, 0.00) 80.35%);
+            grid-column: span 20;
+            grid-row: span 1;
+            font-size: 12px;
+            position: fixed;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+
+    <meta http-equiv="origin-trial"
+        content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+</head>
+
+<body>
+    <div class="header">
+        🍄The Mushroom Foundation🍄
+    </div>
+    <div id="faces-container"><canvas width="100vw" height="100vh"></canvas></div>
+    <div class="full-width-above-canvas">
+        <div class="container leaderboard">
+            <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Top Center Leaderboard -->
+            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-3876829236050932" data-ad-slot="4985840607" data-adsbygoogle-status="done"
+                data-ad-status="unfilled">
+                <div id="aswift_0_host"
+                    style="border: none; height: 90px; width: 728px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"
+                    tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0"
+                        browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;"
+                        sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                        width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0"
+                        allowtransparency="true" scrolling="no" allow="attribution-reporting"
+                        src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3876829236050932&amp;output=html&amp;h=90&amp;slotname=4985840607&amp;adk=1143267803&amp;adf=683863926&amp;pi=t.ma~as.4985840607&amp;w=728&amp;lmt=1457654463&amp;format=728x90&amp;url=http%3A%2F%2Fsalmonofcapistrano.com%2F&amp;wgl=1&amp;dt=1706904229553&amp;bpp=3&amp;bdt=159&amp;idt=180&amp;shv=r20240131&amp;mjsv=m202401290101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;correlator=1493371951568&amp;frm=20&amp;pv=2&amp;ga_vid=1287043756.1706558239&amp;ga_sid=1706904230&amp;ga_hid=1313133166&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=18&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;adx=596&amp;ady=10&amp;biw=1920&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C44809003%2C31080817%2C95324154%2C95324160%2C31078668%2C31078670&amp;oid=2&amp;pvsid=2891736508323511&amp;tmod=1235489987&amp;uas=0&amp;nvt=1&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1032%2C1920%2C911&amp;vis=1&amp;rsz=%7C%7CaeE%7C&amp;abl=CA&amp;pfx=0&amp;fu=0&amp;bc=23&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=190"
+                        data-google-container-id="a!1" data-load-complete="true"></iframe></div>
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div> <!-- "container leaderboard" -->
+    </div> <!-- "full-width" -->
+
+    <div class="full-canvas">
+
+        <img id="face-source-0" src="image/Mushroom-4.png" height="50" width="auto" alt=" " class="face-source">
+        <img id="face-source-1" src="image/mushroomsmaller1.png" height="50" width="auto" class="face-source">
+        <!-- <img id="face-source-2" src="image/mushroom3.png" height="50"width="auto"class="face-source"> -->
+        <img id="face-source-4" src="image/Portabella-Mushrooms.png" class="face-source">
+
+
+
+
+
+
+        <script type="text/javascript" src="java/Three.js"></script>
+        <script type="text/javascript" src="java/Faces.js"></script>
+        <script type="text/javascript">
+            window.onload = Faces.windowInit;
+        </script>
+        <!-- <center> <h3>Thanks for visiting! serious inquiries may be directed to likethe@salmonofcapistrano.com </h3></center> -->
+
+    </div> <!-- "full-canvas" -->
+
+    <div class="full-width">
+        <div class="container">
+
+            <div class="container-half">
+                <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Footer Ad1 -->
+                <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px"
+                    data-ad-client="ca-pub-3876829236050932" data-ad-slot="3229905809" data-adsbygoogle-status="done"
+                    data-ad-status="unfilled">
+                    <div id="aswift_1_host"
+                        style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"
+                        tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1"
+                            name="aswift_1" browsingtopics="true"
+                            style="left:0;position:absolute;top:0;border:0;width:336px;height:280px;"
+                            sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                            width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0"
+                            hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting"
+                            src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3876829236050932&amp;output=html&amp;h=280&amp;slotname=3229905809&amp;adk=6940106&amp;adf=4059110530&amp;pi=t.ma~as.3229905809&amp;w=336&amp;lmt=1457654463&amp;format=336x280&amp;url=http%3A%2F%2Fsalmonofcapistrano.com%2F&amp;wgl=1&amp;dt=1706904229600&amp;bpp=5&amp;bdt=207&amp;idt=146&amp;shv=r20240131&amp;mjsv=m202401290101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=728x90&amp;correlator=1493371951568&amp;frm=20&amp;pv=1&amp;ga_vid=1287043756.1706558239&amp;ga_sid=1706904230&amp;ga_hid=1313133166&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=18&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;adx=542&amp;ady=66&amp;biw=1920&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C44809003%2C31080817%2C95324154%2C95324160%2C31078668%2C31078670&amp;oid=2&amp;pvsid=2891736508323511&amp;tmod=1235489987&amp;uas=0&amp;nvt=1&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1032%2C1920%2C911&amp;vis=1&amp;rsz=%7C%7CleE%7C&amp;abl=CS&amp;pfx=0&amp;fu=0&amp;bc=23&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;dtd=147"
+                            data-google-container-id="a!2" data-load-complete="true"></iframe></div>
+                </ins>
+                <!-- <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script> -->
+            </div> <!-- container-half" -->
+
+
+
+        </div>
+    </div>
+
+
+    <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"
+        data-ad-status="unfilled">
+        <div id="aswift_3_host" tabindex="0" title="Advertisement" aria-label="Advertisement"
+            style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
+            <iframe id="aswift_3" name="aswift_3" browsingtopics="true"
+                style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;"
+                sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true"
+                scrolling="no" allow="attribution-reporting"
+                src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3876829236050932&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1457654463&amp;plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;plas=596x510_l%7C596x510_r&amp;format=0x0&amp;url=http%3A%2F%2Fsalmonofcapistrano.com%2F&amp;pra=7&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1~2~4~6&amp;aslcwct=150&amp;asacwct=25&amp;dt=1706904229615&amp;bpp=1&amp;bdt=221&amp;idt=139&amp;shv=r20240131&amp;mjsv=m202401290101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=728x90%2C336x280%2C336x280&amp;nras=1&amp;correlator=1493371951568&amp;frm=20&amp;pv=1&amp;ga_vid=1287043756.1706558239&amp;ga_sid=1706904230&amp;ga_hid=1313133166&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=18&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1920&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C44809003%2C31080817%2C95324154%2C95324160%2C31078668%2C31078670&amp;oid=2&amp;pvsid=2891736508323511&amp;tmod=1235489987&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1032%2C1920%2C911&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=23&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=4&amp;uci=a!4&amp;fsb=1&amp;dtd=144"
+                data-google-container-id="a!4" data-load-complete="true"></iframe>
+        </div>
+    </ins><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0"
+        style="display: none;"></iframe>
+</body>
+<iframe id="google_esf" name="google_esf"
+    src="https://googleads.g.doubleclick.net/pagead/html/r20240131/r20190131/zrt_lookup_fy2021.html?hello=world"
+    style="display: none;"></iframe>
+
+<div class="footer">
+    <p><a href="page2.html"> enter site</p>
+</div>
+
+<body>
+
+</html>

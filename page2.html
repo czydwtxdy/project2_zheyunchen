@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>the mushroom foundation</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Press+Start+2P" media="all">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 ><a href="index.html"> The Mushroom Foundation</a></h1>
+        </div>
+        <div class="main">
+            <div class="queen-reishi">
+                <img src="image\reishi.png" alt="reishi">
+            </div>
+            <div class="title">
+                <p>Note From Queen Reishi</p>
+            </div>
+            <div class="text-center">
+                <p id="reishitext">Hello my dearest human friends.<br> I am Queen Reishi, the queen of the mushroom.
+                 Supported by many of the community members, we are currently open The
+                    Mushroom Foundation to help human-mushroom relationship study. You are welcome to join us. Enjoy!
+                </p>
+                <script>
+                    // Function to wrap each word in a span
+                    function wrapWordsInSpans() {
+                        var textElement = document.getElementById("reishitext");
+                        var words = textElement.textContent.split(/\s+/);
+                        textElement.innerHTML = words.map(function(word) {
+                            return "<span>" + word + "</span>";
+                        }).join(" ");
+                    }
+                    wrapWordsInSpans();
+                    // Define an array of colors
+                    var colors = ["rgb(255, 0, 0)", "rgb(100, 0, 100)", "rgb(255, 110, 0)", "rgb(255, 0, 230)", "rgb(255, 100, 0)", "rgb(255, 200, 0)", "rgb(255, 0, 200)"];
+                    function repeatColor(){
+                        // Get all span elements
+                        var spanElements = document.querySelectorAll("#reishitext span");
+                        // Apply a random color to each span
+                        spanElements.forEach(function(span) {
+                            // Generate a random index based on the array length
+                            var randomIndex = Math.floor(Math.random() * colors.length);
+                            // Select a color from the array using the random index
+                            var selectedColor = colors[randomIndex];
+                            // Apply the selected color to the span element
+                            span.style.color = selectedColor;
+                            // Logging the color and random index
+                            console.log("Selected Text Color:", selectedColor);
+                            console.log("Random Index:", randomIndex);
+                        });
+                    }
+                setInterval(repeatColor, 100);
+            </script>
+            </div>
+            <div class="end">
+                <p>
+                    
+                    <a href="page3.html">enter site</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="index.html">back to human world</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
