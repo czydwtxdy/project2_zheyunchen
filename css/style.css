@@ -167,9 +167,9 @@ align-items: flex-start; */
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(45deg, #0099ff, #ff7ec5);
+    background: linear-gradient(45deg, #bbff00, #ff1596);
     background-size: 400% 400%;
-    animation: gradientChange 1s infinite alternate;
+    animation: gradientChange 0.5s infinite alternate;
 }
 
 @keyframes gradientChange {
