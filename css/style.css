@@ -167,7 +167,7 @@ align-items: flex-start; */
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(45deg, #bbff00, #ff1596);
+    background: linear-gradient(45deg, #bbff00, #152cff);
     background-size: 400% 400%;
     animation: gradientChange 0.5s infinite alternate;
 }
@@ -184,7 +184,7 @@ align-items: flex-start; */
 .whitepage_text{
     width: 400px;
     height: 500px;
-    background: linear-gradient(180deg,rgba(255, 255, 255, 0.103) 2.35%, #ffffff 50.42%, rgba(255, 255, 255, 0.103) 95.35%);
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.5) 2.35%, #ffffff 50.42%, rgba(255, 255, 255, 0.5) 95.35%);
     border: #FFF 5px solid;
     border-radius: 10px;
     font-size: 20px;
