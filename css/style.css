@@ -266,8 +266,8 @@
 } */
 .whitepage {
     grid-area: 2/5/22/15;
-    background-size: 100%;
-    background-image: url(../image/background_whitepage.png);
+    background-size: 20%;
+    background-image: url(../image/background-whitepage.png);
     position: relative;
     width: 474px;
     display: flex;
@@ -278,14 +278,14 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    color:#ff009d;
+    color:#ffffff;
     overflow: hidden; /* Ensure the gradient layer doesn't overflow */
 }
 @media screen and (max-width: 1000px){
     .whitepage {
         grid-area: 2/9/20/20;
-        background-size: 100%;
-        background-image: url(../image/background_whitepage.png);
+        background-size: 10%;
+        background-image: url(../image/background-whitepage.png);
         position: relative;
         width: 700px;
         display: flex;
@@ -296,14 +296,14 @@
         font-size: 20px;
         font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
-        color:#ff009d;
+        color:#ffffff;
         overflow: hidden; /* Ensure the gradient layer doesn't overflow */
     }
     
 }
 .whitepage_short {
     grid-area: 2/5/10/15;
-    background-image: url(../image/background_whitepage.png) 40%;
+    background-image: url(../image/background-whitepage.png) 40%;
     position: relative;
     width: 474px;
     display: flex;
@@ -313,7 +313,7 @@
     justify-content: flex-start;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    color: #ff0077;
+    color: #ffffff;
     overflow: hidden; /* Ensure the gradient layer doesn't overflow */
 }
 
@@ -325,8 +325,8 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(45deg, #bbff00, #152cff);
-    background-size: 400% 400%;
+    background: linear-gradient(45deg, #bbff00, #ff009d, #152cff);
+    background-size: 100% 100%;
     animation: gradientChange 0.5s infinite alternate;
 }
 
@@ -342,8 +342,8 @@
 .whitepage_text{
     width: 350px;
     height: auto;
-    background: linear-gradient(180deg,rgba(255, 255, 255, 0.5) 2.35%, #ffffff 50.42%, rgba(255, 255, 255, 0.5) 95.35%);
-    border: #FFF 5px solid;
+    background: linear-gradient(180deg,rgba(251, 255, 0, 0.73) 2.35%, #ffffff 50.42%, rgba(251, 255, 0, 0.7) 95.35%);
+    border: #36ff00 5px dashed;
     border-radius: 10px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -356,9 +356,9 @@
     .whitepage_text{
         width: 600px;
         height: auto;
-        background: linear-gradient(180deg,rgba(255, 255, 255, 0.5) 2.35%, #ffffff 50.42%, rgba(255, 255, 255, 0.5) 95.35%);
-        border: #FFF 5px solid;
-        border-radius: 10px;
+        background: linear-gradient(180deg,rgba(251, 255, 0, 0.73) 2.35%, #ffffff 50.42%, rgba(251, 255, 0, 0.7) 95.35%);
+        border: #36ff00 5px dashed;
+            border-radius: 10px;
         font-size: 35px;
         font-family: 'Times New Roman', Times, serif;
         color: #0059cb;
