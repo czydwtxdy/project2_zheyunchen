@@ -25,8 +25,8 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-                // Function to handle page click
-                function redirectToPage() {
+        // Function to handle page click
+        function redirectToPage() {
             // Replace "your_target_page.html" with the actual URL of the page you want to link to
             window.location.href = "page2.html";
         }
@@ -51,8 +51,9 @@
             padding: 15px;
             text-align: center;
             animation: colorChange 1s infinite alternate;
-            
+
         }
+
         @keyframes colorChange {
             0% {
                 color: rgb(255, 0, 212);
@@ -151,16 +152,18 @@
 </head>
 
 <body onclick="redirectToPage()">
+    <div id="faces-container">
+        <!-- <canvas width="100vw" height="100vh"></canvas> -->
     
+
     <div class="header">
         🍄The Mushroom Foundation🍄
     </div>
-    <div id="faces-container"><canvas width="100vw" height="100vh"></canvas></div>
-    <div class="full-width-above-canvas">
-        <div class="container leaderboard">
-            <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <div class="full-width-above-canvas"> -->
+        <!-- <div class="container leaderboard">
+            <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
             <!-- Top Center Leaderboard -->
-            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:0px"
                 data-ad-client="ca-pub-3876829236050932" data-ad-slot="4985840607" data-adsbygoogle-status="done"
                 data-ad-status="unfilled">
                 <div id="aswift_0_host"
@@ -177,14 +180,14 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div> <!-- "container leaderboard" -->
-    </div> <!-- "full-width" -->
+    <!-- </div> "full-width" -->
 
     <div class="full-canvas">
 
-<img id="face-source-0" src="image/Mushroom-4.png" height="10px" width="auto" alt=" " class="face-source">
+        <img id="face-source-0" src="image/Mushroom-4.png" height="10px" width="auto" alt=" " class="face-source">
         <img id="face-source-1" src="image/mushroomsmaller1.png" height="10px" width="auto" class="face-source">
-        <!-- <img id="face-source-2" src="image/mushroom3.png" height="50"width="auto"class="face-source"> -->
-        <!-- <img id="face-source-4" src="image\mushroom2.png" height="10" width="auto" class="face-source"> -->
+        <img id="face-source-2" src="image/mushroom2.png" height="50" width="auto" class="face-source">
+        <img id="face-source-4" src="image/mushroom5.png" height="10" width="auto" class="face-source">
 
 
 
@@ -251,9 +254,9 @@
     style="display: none;"></iframe>
 
 <div class="footer">
-    <p>click any mushroom to enter the mushroom land</p>
+    <p>click anywhere to enter the mushroom universe</p>
 </div>
-
+</div>
 <body>
 
 </html>
