@@ -242,7 +242,7 @@
 
 .nav img:hover {
     transform: scale(1.2); 
-    filter: brightness(2);/* Scale the image on hover, adjust as needed */
+    filter: invert(1);/* Scale the image on hover, adjust as needed */
     /* Add other styles for the hover effect */
 }
 
