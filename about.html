@@ -3,8 +3,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="image/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Berkshire+Swash" >
     <link rel="manifest" href="image/favicon_io/site.webmanifest">
-  
     <title>the mushroom foundation</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Press+Start+2P" media="all">
@@ -15,6 +15,20 @@
     <div class="header">
         <h1><a href="page2.html"> The Mushroom Foundation</a></h1>
     </div>
+            <!-- Add this button for the hamburger menu -->
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script>
+            function toggleNav() {
+                var nav = document.querySelector('.nav');
+                nav.classList.toggle('active');
+            }
+        </script>
+    
+
     <div class="nav">
         <a href="page3.html"><img src="image\homepage.png"></a>
         <a href="about.html">
@@ -30,14 +44,28 @@
     <div class="whitepage">
         <img src="image\aboutus_thumnnail.png">
         <div class="whitepage_text">
-        <p>The Mushroom Foundation is a mushroom-community-centered foundation. Our purpose is to become the bridge between mushroom communities and human being. In recent years, we became one of the most popular bio-design materials in human world (finally not the most popular ingredient in plant-based dishes). We are more than happy to support and help human to improve their life style. We are also, more than happy to share our community based knowledge with human society.</p>
-        <p>Known as a democratic community, we are famous for our 'talking network.' Our sister community-- forest is holding one of the most crucial position in this 'free talk' network, for survival, for communication, and for chitchat. The Mother Tree is what we communicate with forest members and other community; we are eagar to find a 'Mother Tree' between us and human.</p>
+            <p>
+
+                The Mushroom Foundation stands proudly as a beacon of mushroom-centered community initiatives, driven by the noble purpose of fostering a deep connection between mushroom communities and humanity. Our journey has seen us evolve into a highly sought-after entity in the realm of bio-design materials, signifying a transformative shift from being a mere culinary delight to a pivotal presence in the human world.            </p>
+            <p>
+                Throughout the years, our commitment to supporting and enhancing human lifestyles has been unwavering. The joy we derive from sharing our wealth of community-based knowledge with human society is immeasurable, making a tangible impact on the well-being of individuals.            </p>
+            <p>
+                At the core of our foundation lies a commitment to democratic principles, and we take pride in our renowned 'talking network.' This network, exemplified by our sister community, the forest, plays a crucial role in fostering open communication—for survival strategies, meaningful exchanges, and casual chitchat alike. The venerable Mother Tree serves as the epicenter of this 'free talk' network, facilitating communication not only among forest inhabitants but also with diverse communities.
+             </p>
+             <p>
+                Our aspirations extend beyond the realms of nature, as we eagerly seek to establish a profound 'Mother Tree' connection between the Mushroom Foundation and humanity. This connection serves as a bridge, enabling a harmonious exchange of ideas, knowledge, and mutual understanding between our fungal communities and the human world. With a deep-rooted commitment to unity and collaboration, we envision a future where the Mushroom Foundation becomes a symbol of interconnectedness, bridging the gap between the natural world and human civilization.
+             </p>
     </div>
     </div>
     <div class="footer">
         <p>All Rights Reserved ©The Mushroom Foundation</p>
     </div>
 
+</div>
+<div class="bottom">
+    <div class="text-container">
+    KEEP CALM AND MUSHROOM ON!
+</div>
 </div>
 </body>
 </html>

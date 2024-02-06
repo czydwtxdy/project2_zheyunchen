@@ -41,7 +41,7 @@ var Faces = {
 
 		self.scene = new THREE.Scene();		
 		
-		for (var i = 0; i < 170; i++) {
+		for (var i = 0; i < 300; i++) {
 			num = Math.floor(Math.random()*6);
 			particle = new THREE.Particle(new THREE.ParticleBasicMaterial({map: document.getElementById('face-source-' + num)}));
 			particle.position.x = Math.random() * 2000 - 1000;

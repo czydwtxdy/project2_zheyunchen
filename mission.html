@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>the mushroom foundation</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Berkshire+Swash" >
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="image/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_io/favicon-32x32.png">
@@ -13,6 +14,31 @@
     <div class="header">
         <h1><a href="page2.html"> The Mushroom Foundation</a></h1>
     </div>
+        <!-- Add this button for the hamburger menu -->
+<div class="hamburger" onclick="toggleNav()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    </div>
+    <script>
+    function toggleNav() {
+        var nav = document.querySelector('.nav');
+        nav.classList.toggle('active');
+    }
+    </script>
+    <div class="nav">
+        <a href="page3.html"><img src="image\homepage.png"></a>
+        <a href="about.html">
+            <img src="image\aboutus.png">
+        </a>
+        <a href="mission.html"><img src="image\mission.png"></a>
+        <a href="donate.html"><img src="image\donation.png"></a>
+        <a href="event.html"><img src="image\events.png"></a>
+        <a href="publication.html"><img src="image\publication.png"></a>
+        <a href="join.html"><img src="image\join.png"></a>
+        <a href="awards.html"><img src="image\awards.png"></a>
+    </div>
+
     <div class="nav">
         <a href="page3.html"><img src="image\homepage.png"></a>
         <a href="about.html">
@@ -32,8 +58,12 @@
         </p>
         
         <div class="whitepage_text">
-            <p>Our mission is to build a communication platform between human society and our community. Us mushroom strongly stress that human are a hidden resource for our community-- they have the knowledge that we do not have, they are one of the most clever species on this planet-- so that our community are very interested in the human specie study. Led by mushroom-human-relationship analyst, profeshroom, Pleurotus ostreatus, our community is interested in creating a human-friendly communicating space.</p>
-            <p>Mother tree is a symbol of connecting the mushroom community with the forest, we are aiming to build a mother tree between mushroom and human. Human have been always interested in  the machnism and methodology of us, we are glad to share and open to hear your understanding. We hole annual conference with human to help better communication and circulation. For more information, please visit <a href="event.html">the event page</a>for better understanding.</p>
+            <p>
+                Embarking on our noble mission, we are dedicated to constructing an expansive communication platform that seamlessly connects human society with our thriving mushroom community. At the heart of our philosophy lies a profound belief in the untapped potential of humans as a valuable resource for our fungal brethren. Recognizing the vast reservoir of knowledge that humans possess, we acknowledge them as one of the intelligent species on our planet, making their exploration an intriguing endeavor for our community. Spearheaded by the esteemed mushroom-human-relationship analyst, Professhroom Pleurotus Ostreatus, our community is fervently engaged in the intricate study of the human species.</p>
+            <p>The visionary concept of the Mother Tree stands as a powerful symbol, facilitating the interconnection between the mushroom community and the forest. Building upon this symbolism, our ambitious goal is to establish a metaphorical 'Mother Tree' that serves as a conduit between mushrooms and humans. Humans, driven by an enduring curiosity about our mechanisms and methodologies, find themselves welcomed into our community. We are not only delighted to share our knowledge but also eagerly anticipate hearing and understanding the perspectives of our human counterparts.</p>
+            <p>
+                An integral part of our initiative involves the organization of an annual conference that serves as a collaborative platform for humans and mushrooms to engage in meaningful dialogue. This conference is designed to enhance communication and foster a reciprocal circulation of ideas, creating an environment where understanding flourishes. For those seeking further insights and information, we encourage you to explore our dedicated event page, providing a comprehensive overview of our endeavors and facilitating a deeper understanding of the symbiotic relationship we aim to cultivate between mushrooms and humanity. <a href=event.html>Join</a> us on this extraordinary journey of exploration, learning, and collaboration.
+            </p>
 
     </div>
     </div>
@@ -41,6 +71,11 @@
         <p>All Rights Reserved ©The Mushroom Foundation</p>
     </div>
 
+</div>
+<div class="bottom">
+    <div class="text-container">
+    Mission-possible 2024
+</div>
 </div>
 </body>
 </html>
