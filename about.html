@@ -17,34 +17,48 @@
         <h1><a href="page2.html"> The Mushroom Foudation</a></h1>
     </div>
             <!-- Add this button for the hamburger menu -->
-        <div class="hamburger" onclick="toggleNav()">
+        <div class="hamburger" id="hamburger" >
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
             <script>
-                function toggleNav() {
-                var x = document.querySelector(".nav");
-                if (x.className === "nav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "nav";
-                }
-            }
-            </script>
+                document.getElementById('mobile-menu').addEventListener('click', function () {
+    document.querySelector('.nav').classList.toggle('active');
+});
+
+                <!-- // function toggleNav() {
+                //     var nav = document.querySelector(".nav");
+                //     nav.classList.toggle("active");
+                // } -->
+                
+             </script>
         </div>
 
-    <div class="nav">
+    <div class="nav" id="nav">
+        <div class="nav img">
+            <span class="close-btn" id="close-popup-btn">&times;</span>
         <a href="page3.html"><img src="image\homepage.png"></a>
         <a href="about.html">
             <img src="image\aboutus.png">
         </a>
         <a href="mission.html"><img src="image\mission.png"></a>
-        <a href="donate.html"><img src="image\donation.png"></a>
+       <a href="donate.html"><img src="image\donation.png"></a>
         <a href="event.html"><img src="image\events.png"></a>
         <a href="publication.html"><img src="image\publication.png"></a>
         <a href="join.html"><img src="image\join.png"></a>
         <a href="awards.html"><img src="image\awards.png"></a>
     </div>
+    </div>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav').style.display = 'block';
+        });
+
+        document.getElementById('close-popup-btn').addEventListener('click', function () {
+            document.getElementById('nav').style.display = 'none';
+        });
+    </script>
+</body>
 
 
     <div class="whitepage">
