@@ -404,6 +404,7 @@
     background:linear-gradient(172deg, #4DC0F5 2.47%, #FFEC3C 15.55%, #95BDFA 30.63%, rgb(255, 83, 203) 50.7%, rgb(172, 255, 172) 70.7%,#EEA4B4 90.7%); /* Choose a suitable background color */
     z-index: 1000; /* Ensure it's above other content */
     text-align: center; /* Center the images */
+    overflow-y: scroll;
     max-height: 100vh; /* Ensure the content doesn't overflow */
 }
 .mobile-nav-visible {

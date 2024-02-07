@@ -121,7 +121,12 @@ audio {
 #faces-container {
 	height: 100%;
 }
-
+@media screen and (max-device-width: 600px){
+	#faces-container {
+		width:100vw;
+	}
+	
+}
 
 /* mobile phone */
 @media screen and (max-device-width: 480px) {
