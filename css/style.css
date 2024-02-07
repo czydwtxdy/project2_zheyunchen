@@ -415,7 +415,7 @@
     justify-content: center;
 }
 .mobile-nav a {
-    margin-top: 30px; /* Space out the images */
+    margin-top: 10px; /* Space out the images */
 }
 .mobile-nav img {
     height: auto; /* Maintain aspect ratio */
