@@ -108,6 +108,18 @@
     font-weight: bold;
     float: left;
 }
+.footer_page3 {
+    color: #FFF;
+    background: linear-gradient(90deg, #00FF38 1.42%, rgba(0, 255, 56, 0.00) 80.35%);
+    /* grid-column: span 20; */
+    grid-row: span 1;
+    font-size: 15px;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    font-family: 'Berkshire Swash',Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 500px) {
     .header {
         align-items: center;
