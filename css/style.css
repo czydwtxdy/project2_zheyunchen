@@ -10,13 +10,13 @@
     justify-content: space-between;
     height:auto;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     body{
         background-size: 10%;
         margin: 0;
         background-image: url(../image/backgroudn.png),linear-gradient(172deg, #00aeff 2.47%, #ffe600 15.55%, #95bdfa 30.63%, rgb(255, 0, 179) 50.7%, rgb(172, 255, 172) 70.7%,#ff009d 90.7%);
         width: 100%;
-
+        overflow-x: hidden;
         display: flex;
         flex-direction: column; 
         justify-content: space-between;
@@ -37,7 +37,7 @@
     justify-content: space-between;
     height:500vh;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .body_2{
         background-size: 8%;
         margin: 0;
@@ -59,12 +59,13 @@
     display: grid;
     height:100vh;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .container_homepage {
         grid-template-rows: repeat(23, 1fr);
         grid-template-columns: repeat(20, 1fr);
         display: grid;
         height:100vh;
+        width: 100vw;
     }
     
 }
@@ -73,8 +74,21 @@
     grid-template-columns: repeat(20, 1fr);
     display: grid;
     height: auto;
+    
 }
-
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-rows: repeat(23, 1fr);
+        grid-template-columns: repeat(20, 1fr);
+        display: grid;
+        height: auto;
+        filter: blur(0);
+        z-index: 997;
+        
+        transition: filter 0.5s ease-in-out;
+    }
+    
+}
 /* .header {
     grid-column: span 20;
     grid-row: span 1;
@@ -94,8 +108,9 @@
     font-weight: bold;
     float: left;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .header {
+        align-items: center;
         grid-column: span 20;
         grid-row: span 1;
         background: linear-gradient(90deg, #00FF38 1.42%, rgba(0, 255, 56, 0.00) 80.35%);
@@ -103,8 +118,25 @@
         font-family: 'Berkshire Swash',Arial, Helvetica, sans-serif;
         font-weight: bold;
         float: left;
-        font-size: 35px;
+        font-size: 15px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999; /* Set a high z-index value to keep the header on top */
     }
+    .footer {
+        color: #FFF;
+        background: linear-gradient(90deg, #00FF38 1.42%, rgba(0, 255, 56, 0.00) 80.35%);
+        /* grid-column: span 20; */
+        grid-row: span 1;
+        font-size: 15px;
+        bottom: 0;
+        position: fixed;
+        z-index: 9999;
+        font-family: 'Berkshire Swash',Arial, Helvetica, sans-serif;
+    }
+    
     
 }
 .main {
@@ -145,11 +177,11 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .queen-reishi img {
         top: 0;
         left: 0;
-        width: 600px;
+        width: 214px;
         height: auto;
         object-fit: cover;
         margin-top: 50px;
@@ -171,6 +203,22 @@
     font-family: 'Berkshire Swash', cursive;
 
 }
+@media screen and (max-width: 500px) {
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Berkshire Swash',Arial, Helvetica;
+        color: #240c9f;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Berkshire Swash', cursive;
+    }
+    
+}
 .text-center{
     margin:auto;     font-size: 25px; 
     width:400px; 
@@ -184,7 +232,7 @@
 }
 .text-homepage{
     margin:auto;     font-size: 25px; 
-    width:400px; 
+    width:300px; 
     font-weight: bolder;
     font-family: 'Berkshire Swash',Arial, Helvetica, sans-serif;
     text-align: center;
@@ -206,7 +254,7 @@
 }
 .bar {
     width: 45px;
-    height: 14px;
+    height: 8px;
     background-color: #00ff00;
     margin: 6px 0;
     transition: 0.4s;
@@ -215,20 +263,43 @@
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
     .hamburger {
         display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 999;
     }
 
-    .nav {
-        display: none; /* Hide the navigation links initially on smaller screens */
-    }
+    
+        .nav {
+            display: none; /* Hide the nav items by default on small screens */
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 70px; /* Adjust the top position to avoid overlapping with header */
+            left: 0;
+            width: 100%;
+            background-color: #fff; /* Adjust background color if needed */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        .nav a {
+            padding: 15px;
+            text-align: center;
+        }
+    
+        .nav.responsive {
+            display: flex;
+        }
 
-    .nav.active {
-        display: block; /* Show the navigation links when the menu is active */
-    }
+
+
+    /* .nav.active {
+   display: block
+    } */
 }
-
 
 .nav img {
     width: 200px;
@@ -245,6 +316,7 @@
     filter: invert(1);/* Scale the image on hover, adjust as needed */
     /* Add other styles for the hover effect */
 }
+
 
 
 
@@ -281,13 +353,13 @@
     color:#ffffff;
     overflow: hidden; /* Ensure the gradient layer doesn't overflow */
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 500px){
     .whitepage {
-        grid-area: 2/9/20/20;
-        background-size: 10%;
+        grid-area: 2/5/20/17;
+        background-size: 8%;
         background-image: url(../image/background-whitepage.png);
         position: relative;
-        width: 700px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -352,14 +424,14 @@
     font-weight: bolder;
     margin: 30px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .whitepage_text{
-        width: 600px;
+        width: 270px;
         height: auto;
         background: linear-gradient(180deg,rgba(251, 255, 0, 0.73) 2.35%, #ffffff 50.42%, rgba(251, 255, 0, 0.7) 95.35%);
         border: #36ff00 5px dashed;
             border-radius: 10px;
-        font-size: 35px;
+        font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
         color: #0059cb;
         font-style: oblique;
@@ -394,13 +466,14 @@
     margin-left: 0px;
     position: relative;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .homepagebackground {
-        grid-area: 2/7/23/15;
+        grid-area: 3/5/22/16;
+        background-size:100%;
         background-image: url(../image/background4.png);
         display: flex;
         flex-direction: column;
-        width: 474px;
+        width: 300px;
         position: relative;
         align-items: center;
         text-align: center;
@@ -426,7 +499,7 @@
     font-family: 'Berkshire Swash', cursive;
 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .end{
         display: flex;
         align-items: center;
@@ -456,7 +529,7 @@
 .text-container:hover {
     color: rgb(255, 251, 0); /* Change text color on hover if needed */
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .bottom{
         font-size: 20px; 
         text-align: right;
