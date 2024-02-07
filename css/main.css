@@ -125,6 +125,7 @@ audio {
 	#faces-container {
 		height: 100dvh;
 		width: 100dvw;
+		top:0;
 		overflow: hidden;
 		position:fixed;
 
