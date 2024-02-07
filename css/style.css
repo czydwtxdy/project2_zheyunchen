@@ -136,6 +136,17 @@
         z-index: 9999;
         font-family: 'Berkshire Swash',Arial, Helvetica, sans-serif;
     }
+    .footer_page3 {
+        color: #FFF;
+        background: linear-gradient(90deg, #00FF38 1.42%, rgba(0, 255, 56, 0.00) 80.35%);
+        /* grid-column: span 20; */
+        grid-row: span 1;
+        font-size: 15px;
+        bottom: 0;
+        position: fixed;
+        z-index: 999;
+        font-family: 'Berkshire Swash',Arial, Helvetica, sans-serif;
+    }
     
     
 }
@@ -287,7 +298,7 @@
         position: fixed;
         top: 15px;
         right: 15px;
-        z-index: 999;
+        z-index: 9999;
     }
     /* .hamburger span{
             display: block;
@@ -298,6 +309,7 @@
     } */
     .nav{
         z-index: 999;
+        position: fixed;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
@@ -381,6 +393,44 @@
     color:#ffffff;
     overflow: hidden; /* Ensure the gradient layer doesn't overflow */
 }
+
+.mobile-nav {
+    display: none; /* Initial state is hidden */
+    position: fixed;
+    top: 0; /* Adjust based on your header height */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background:linear-gradient(172deg, #4dc0f5 2.47%, #ffec3c 15.55%, #95bdfa 30.63%, rgb(255, 83, 203) 50.7%, rgb(172, 255, 172) 70.7%,#eea4b4 90.7%); /* Choose a suitable background color */
+    z-index: 1000; /* Ensure it's above other content */
+    text-align: center; /* Center the images */
+    padding: 10px 0; /* Add some padding */
+    
+}
+
+.mobile-nav-visible {
+    display: flex; /* or "block", depending on your layout needs */
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.mobile-nav a {
+    margin-top: 50px; /* Space out the images */
+    display: inline-block; /* Display images inline */
+}
+
+.mobile-nav img {
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.mobile-nav img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+
 @media screen and (max-width: 500px){
     .whitepage {
         grid-area: 2/5/20/17;
@@ -396,7 +446,7 @@
         font-size: 20px;
         font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
-        color:#ffffff;
+        color:#25ff00;
         overflow: hidden; /* Ensure the gradient layer doesn't overflow */
     }
     

@@ -15,20 +15,24 @@
     <div class="header">
         <h1><a href="page2.html"> The Mushroom Foudation</a></h1>
     </div>
-        <!-- Add this button for the hamburger menu -->
-<div class="hamburger" onclick="toggleNav()">
+    <!-- Add this button for the hamburger menu -->
+    <div class="hamburger" onclick="toggleMobileNav()">
+        <div class="bar"></div>
     <div class="bar"></div>
     <div class="bar"></div>
-    <div class="bar"></div>
-    </div>
-    <script>
-    function toggleNav() {
-        var nav = document.querySelector('.nav');
-        nav.classList.toggle('active');
-    }
-    </script>
+</div>
 
-
+<!-- New Mobile Navigation with Images -->
+<div class="mobile-nav" id="mobileNav">
+    <a href="page3.html"><img src="image/homepage.png" alt="Home"></a>
+    <a href="about.html"><img src="image/aboutus.png" alt="About Us"></a>
+    <a href="mission.html"><img src="image/mission.png" alt="Our Mission"></a>
+    <a href="donate.html"><img src="image/donation.png" alt="Donate"></a>
+    <a href="event.html"><img src="image/events.png" alt="Events"></a>
+    <a href="publication.html"><img src="image/publication.png" alt="Publications"></a>
+    <a href="join.html"><img src="image/join.png" alt="Join Us"></a>
+    <a href="awards.html"><img src="image/awards.png" alt="Awards"></a>
+</div>
     <div class="nav">
         <a href="page3.html"><img src="image\homepage.png"></a>
         <a href="about.html">
@@ -77,5 +81,11 @@
     No mushrooms were harmed in the making of this website.
 </div>
 </div>
+<script>
+    function toggleMobileNav() {
+        var x = document.getElementById("mobileNav");
+        x.classList.toggle("mobile-nav-visible");
+    }
+    </script>
 </body>
 </html>
