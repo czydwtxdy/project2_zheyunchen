@@ -401,35 +401,28 @@
     left: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background:linear-gradient(172deg, #4dc0f5 2.47%, #ffec3c 15.55%, #95bdfa 30.63%, rgb(255, 83, 203) 50.7%, rgb(172, 255, 172) 70.7%,#eea4b4 90.7%); /* Choose a suitable background color */
+    background:linear-gradient(172deg, #4DC0F5 2.47%, #FFEC3C 15.55%, #95BDFA 30.63%, rgb(255, 83, 203) 50.7%, rgb(172, 255, 172) 70.7%,#EEA4B4 90.7%); /* Choose a suitable background color */
     z-index: 1000; /* Ensure it's above other content */
     text-align: center; /* Center the images */
-    padding: 10px 0; /* Add some padding */
-    
+    max-height: 100vh; /* Ensure the content doesn't overflow */
 }
-
 .mobile-nav-visible {
     display: flex; /* or "block", depending on your layout needs */
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
-
 .mobile-nav a {
-    margin-top: 50px; /* Space out the images */
-    display: inline-block; /* Display images inline */
+    margin-top: 30px; /* Space out the images */
 }
-
 .mobile-nav img {
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
-
 .mobile-nav img:hover {
     transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
-
 
 @media screen and (max-width: 500px){
     .whitepage {

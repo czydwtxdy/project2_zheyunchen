@@ -84,8 +84,28 @@
     function toggleMobileNav() {
         var x = document.getElementById("mobileNav");
         x.classList.toggle("mobile-nav-visible");
+        adjustBodyScroll(x.classList.contains("mobile-nav-visible"));
     }
-    </script>
-
+    function adjustBodyScroll(isNavVisible) {
+        if (isNavVisible) {
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed'; // Add this if you haven't already
+            document.body.style.width = '100%'; // Ensure the width is not affected by position fixed
+        } else {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+        }
+    }
+    // Listen for window resize events
+    window.addEventListener('resize', function() {
+        var x = document.getElementById("mobileNav");
+        if (window.innerWidth > 500) { // Assuming 500px is your mobile threshold
+            x.classList.remove("mobile-nav-visible");
+            adjustBodyScroll(false);
+        }
+    });
+        </script>
+    
 </body>
 </html>
