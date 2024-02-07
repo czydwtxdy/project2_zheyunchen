@@ -37,6 +37,18 @@
         body{
             max-width: 100vw;
             overflow: hidden;
+        }@keyframes colorChange {
+            0% {
+                color: rgb(255, 0, 212);
+            }
+
+            50% {
+                color: rgb(51, 255, 0);
+            }
+
+            100% {
+                color: rgb(255, 166, 0);
+            }
         }
         .full-width {
             width: 100%;
@@ -79,6 +91,7 @@
             width: 100vw;
             height:100dvh;
             overflow: hidden;
+            position: fixed;
             
 
         }
@@ -113,19 +126,7 @@
         
     }
 
-        @keyframes colorChange {
-            0% {
-                color: rgb(255, 0, 212);
-            }
-
-            50% {
-                color: rgb(51, 255, 0);
-            }
-
-            100% {
-                color: rgb(255, 166, 0);
-            }
-        }
+        
 
         .full-width-above-canvas {
             width: 100%;
