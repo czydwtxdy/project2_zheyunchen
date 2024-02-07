@@ -123,7 +123,8 @@ audio {
 }
 @media screen and (max-device-width: 600px){
 	#faces-container {
-		width:100vw;
+		height: 100dvh;
+		width: 100dvw;
 	}
 	
 }
