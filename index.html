@@ -2,7 +2,6 @@
 
 <head>
     <title>the Mushroom Foudation </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Press+Start+2P" media="all">
@@ -35,6 +34,10 @@
     </script>
 
     <style type="text/css">
+        body{
+            max-width: 100vw;
+            overflow: hidden;
+        }
         .full-width {
             width: 100%;
             float: left;
@@ -68,6 +71,25 @@
             animation: colorChange 1s infinite alternate;
             float: left;
         }
+
+        .footer p {
+            font-size: 15px;
+        }
+        #faces-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 20px;
+            color: #FFF;
+        }
+        
     }
 
         @keyframes colorChange {
@@ -103,14 +125,7 @@
             width: 100%;
             float: left;
         }
-        @media screen and (max-width: 600px){
-            .full-canvas {
-            width: 100vw;
-            float: left;
-            padding-top: 70px;
-        }
-            
-        }
+       
 
         .full-canvas h1,
         .full-canvas h2 {
