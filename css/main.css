@@ -125,32 +125,10 @@ audio {
 	#faces-container {
 		height: 100dvh;
 		width: 100dvw;
+		overflow: hidden;
+		position:fixed;
+
 	}
 	
 }
 
-/* mobile phone */
-@media screen and (max-device-width: 480px) {
-	body {
-		height: 120%;
-	}
-	h1 {
-		font-size: 25px;
-	}
-	h2 {
-		font-size: 12px;
-		top: 50px;
-	}
-	audio {
-		opacity: 1;
-		bottom: 30px;
-		top: 90px;
-		left: 10px;
-	}
-	#crushin {
-		display: none;
-	}
-	#counter {
-		top: 380px;
-	}
-}
